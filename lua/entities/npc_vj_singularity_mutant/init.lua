@@ -193,6 +193,8 @@ function ENT:Init()
 	if GetConVar("vj_singularity_mutant_canspawnascrawlers"):GetInt() == 1 then
 		if math.random(1,GetConVar("vj_singularity_mutant_crawlerspawnchance"):GetInt()) == 1 then
 			self:Singularity_Mutant_BecomeCrippled()
+			self.StartHealth = self.StartHealth * 0.5
+			self:SetHealth(self.StartHealth)
 		end
 	end
 
