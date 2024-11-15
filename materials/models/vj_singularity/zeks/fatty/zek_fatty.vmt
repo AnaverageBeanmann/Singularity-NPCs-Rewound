@@ -1,0 +1,15 @@
+VertexLitGeneric
+{
+	"$baseTexture" "models/vj_singularity/zeks/fatty/zek_fatty"
+	"$bumpmap" "models/vj_singularity/zeks/fatty/zek_fatty_normal"
+
+	"$phong" 1
+	"$phongboost" .5
+	"$phongexponent" 30
+	"$phongtint" "[.85 .85 1]"
+	"$phongfresnelranges" "[.3 4 30]"
+
+	"$ambientocclusion" 1
+	"$halflambert" 1
+	"$diffuseexp" 1.5
+}
