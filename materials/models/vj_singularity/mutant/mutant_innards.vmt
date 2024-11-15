@@ -1,0 +1,15 @@
+VertexLitGeneric
+{
+	$baseTexture		models/singularity/creatures/mutant_innards
+	$bumpmap			models/singularity/creatures/mutant_innards_normal
+
+	$phong				1
+	$phongboost			1
+	$phongexponent		125
+	$phongtint			"[.85 .85 1]"
+	$phongfresnelranges	"[.3 4 30]"
+
+	$ambientocclusion	1
+	$selfillum			1
+	$diffuseexp			1.5
+}
