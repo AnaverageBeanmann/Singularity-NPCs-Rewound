@@ -223,11 +223,11 @@ function ENT:OnInput(key, activator, caller, data)
 		-- 16 = leap attack
 		-- 36, 35 = crawling attacks
 
-		if self:GetSequence() == 15 || self:GetSequence() == 36 || self:GetSequence() == 35 then
+		if self:GetSequence() == 15 || self:GetSequence() == 36 || self:GetSequence() == 35 then -- Bite or Crawling Attacks
 			self.MeleeAttackDamage = 10
-		elseif self:GetSequence() == 14 || self:GetSequence() == 15 || self:GetSequence() == 16 then
+		elseif self:GetSequence() == 14 || self:GetSequence() == 15 || self:GetSequence() == 16 then -- Sprint or Leap Attacks
 			self.MeleeAttackDamage = 20
-		else
+		else -- Standing Attacks
 			self.MeleeAttackDamage = 15
 		end
 
@@ -562,7 +562,7 @@ function ENT:OnFlinch(dmginfo, hitgroup, status)
 		end
 
 		if self:GetEnemy() != nil then
-			if self:GetPos():Distance(self:GetEnemy():GetPos()) < 300 && !self.Singularity_Mutant_WalkAtTarget then -- walk at them if they're close enough
+			if self:GetPos():Distance(self:GetEnemy():GetPos()) < 150 && !self.Singularity_Mutant_WalkAtTarget then -- walk at them if they're close enough
 				self.Singularity_Mutant_WalkAtTarget = true
 			elseif self:GetPos():Distance(self:GetEnemy():GetPos()) > 500 && self.Singularity_Mutant_WalkAtTarget then -- too far, keep running
 				self.Singularity_Mutant_WalkAtTarget = false

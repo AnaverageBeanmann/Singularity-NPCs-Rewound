@@ -10,6 +10,18 @@ ENT.StartHealth = 250
 -- make it so it can't find enemies?
 -- when it hears something make it start searching and wandering constantly
 -- if it finds someone during that phase then it attacks
+
+-- TODO
+-- ADD ALL THE NEW ANIMATIONS YES HAHA
+-- Redo footstep sound events
+-- Increase time it has to wait before doing a melee attack
+-- Get blind functionality working
+-- Give it more sounds
+-- Add the taunt system
+-- Slow down "Jump Land Moving"
+-- Make the melee attack sounds an emit sound thing to work around them getting cut off
+-- Make "Jump Freefall" not loop
+-- Add new events to the combo attacks so that they disable HasMeleeAttack to prevent opt-ins from looking weird past a certain point
 --------------------
 ENT.VJ_NPC_Class = {"CLASS_SINGULARITY"}
 ENT.InvestigateSoundDistance = 9999
@@ -120,9 +132,9 @@ function ENT:TranslateActivity(act)
 		-- end
 	-- end
 
-	-- if act == ACT_LAND && self:GetEnemy() != nil then
-		-- return ACT_LEAP
-	-- end
+	if act == ACT_LAND && self:GetEnemy() != nil then
+		return ACT_LEAP
+	end
 
 	return self.BaseClass.TranslateActivity(self, act)
 end

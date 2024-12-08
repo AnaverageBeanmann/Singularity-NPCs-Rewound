@@ -20,18 +20,24 @@ if VJExists == true then
 	-- Humans
 	-- VJ.AddNPC("Scientist","npc_vj_singularity_scientist",vCat)
     -- VJ.AddNPC("Spetsnaz","npc_vj_singularity_spetsnaz",vCat)
+	-- VJ.AddNPC("Katorga-12 Security Guard", "npc_vj_hlr1_securityguard", spawnCategory)
 	-- VJ.AddNPC("Spetsnaz Elite","npc_vj_singularity_spetsnaz_elite",vCat)
-	-- VJ.AddNPC("Security Guard", "npc_vj_hlr1_securityguard", spawnCategory)
 
-    -- VJ.AddNPC_HUMAN("Spetsnaz","npc_vj_singularity_spetsnaz",{"weapon_vj_singularity_ar9valkyrie"},vCat)
-	-- VJ.AddNPC_HUMAN("Elite Spetsnaz","npc_vj_singularity_spetsnaz_elite",{"weapon_vj_singularity_gatling"},vCat)
-
-	-- NPC Weapons
-	-- VJ.AddNPCWeapon("VJ_SINGULARITY_AR9VALKYRIE", "weapon_vj_singularity_ar9valkyrie") -- seems like this isn't necessary
-	-- VJ.AddNPCWeapon("VJ_SINGULARITY_GATLING", "weapon_vj_singularity_gatling")
+	-- Multiplayer
+	-- VJ.AddNPC("Blitzer","npc_vj_singularity_mp_blitzer",vCat)
+	-- VJ.AddNPC("Bruiser","npc_vj_singularity_mp_bruiser",vCat)
+	-- VJ.AddNPC("Healer","npc_vj_singularity_mp_healer",vCat)
+	-- VJ.AddNPC("Lurker","npc_vj_singularity_mp_lurker",vCat)
 
 	-- Unused/Cut Content
 	-- VJ.AddNPC("Zombie","npc_vj_singularity_zombie",vCat)
+	
+	-- likely unnecessary but keeping it just in case
+    -- VJ.AddNPC_HUMAN("Spetsnaz","npc_vj_singularity_spetsnaz",{"weapon_vj_singularity_ar9valkyrie"},vCat)
+	-- VJ.AddNPC_HUMAN("Elite Spetsnaz","npc_vj_singularity_spetsnaz_elite",{"weapon_vj_singularity_gatling"},vCat)
+	-- NPC Weapons
+	-- VJ.AddNPCWeapon("VJ_SINGULARITY_AR9VALKYRIE", "weapon_vj_singularity_ar9valkyrie") -- seems like this isn't necessary
+	-- VJ.AddNPCWeapon("VJ_SINGULARITY_GATLING", "weapon_vj_singularity_gatling")
 
 	VJ.AddConVar("vj_singularity_mutant_canspawnascrawlers", 1, {FCVAR_ARCHIVE})
 	VJ.AddConVar("vj_singularity_mutant_canbecrippled", 1, {FCVAR_ARCHIVE})
